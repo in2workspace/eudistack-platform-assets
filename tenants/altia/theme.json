@@ -1,0 +1,28 @@
+{
+  "tenantDomain": "ALTIA",
+  "branding": {
+    "name": "Altia",
+    "primaryColor": "#001E8C",
+    "primaryContrastColor": "#ffffff",
+    "secondaryColor": "#00ff94",
+    "secondaryContrastColor": "#ffffff",
+    "logoUrl": "/assets/tenant/logo.svg",
+    "logoDarkUrl": "/assets/tenant/logo-dark.svg",
+    "faviconUrl": "/assets/tenant/favicon.ico",
+    "pwaIconUrl": null
+  },
+  "content": {
+    "links": [],
+    "footer": null,
+    "knowledgeBaseUrl": "https://in2workspace.github.io/eudistack-platform-docs/",
+    "onboardingUrl": null,
+    "supportUrl": null,
+    "walletUrl": "https://altia.127.0.0.1.nip.io:4445",
+    "walletUrlTest": null,
+    "showWalletUrlTest": false
+  },
+  "i18n": {
+    "defaultLang": "es",
+    "available": ["en", "es", "ca"]
+  }
+}

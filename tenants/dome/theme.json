@@ -1,0 +1,28 @@
+{
+  "tenantDomain": "DOME",
+  "branding": {
+    "name": "DOME Marketplace",
+    "primaryColor": "#002060",
+    "primaryContrastColor": "#ffffff",
+    "secondaryColor": "#00ADD3",
+    "secondaryContrastColor": "#ffffff",
+    "logoUrl": "/assets/tenant/logo.png",
+    "logoDarkUrl": null,
+    "faviconUrl": "/assets/tenant/favicon.png",
+    "pwaIconUrl": null
+  },
+  "content": {
+    "links": [],
+    "footer": null,
+    "knowledgeBaseUrl": "https://knowledgebase.dome-marketplace.eu",
+    "onboardingUrl": "https://dome-marketplace.eu/register",
+    "supportUrl": "https://dome-marketplace.eu/support",
+    "walletUrl": "https://dome.127.0.0.1.nip.io:4445",
+    "walletUrlTest": null,
+    "showWalletUrlTest": false
+  },
+  "i18n": {
+    "defaultLang": "en",
+    "available": ["en", "es"]
+  }
+}
