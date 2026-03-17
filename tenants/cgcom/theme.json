@@ -1,0 +1,28 @@
+{
+  "tenantDomain": "CGCOM",
+  "branding": {
+    "name": "CGCOM",
+    "primaryColor": "#46484C",
+    "primaryContrastColor": "#ffffff",
+    "secondaryColor": "#F9B000",
+    "secondaryContrastColor": "#46484C",
+    "logoUrl": "/assets/tenant/logo.png",
+    "logoDarkUrl": null,
+    "faviconUrl": "/assets/tenant/favicon.png",
+    "pwaIconUrl": null
+  },
+  "content": {
+    "links": [],
+    "footer": null,
+    "knowledgeBaseUrl": null,
+    "onboardingUrl": null,
+    "supportUrl": null,
+    "walletUrl": "https://cgcom.127.0.0.1.nip.io:4445",
+    "walletUrlTest": null,
+    "showWalletUrlTest": false
+  },
+  "i18n": {
+    "defaultLang": "es",
+    "available": ["en", "es"]
+  }
+}
