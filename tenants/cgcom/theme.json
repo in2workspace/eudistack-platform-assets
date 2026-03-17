@@ -2,8 +2,8 @@
   "tenantDomain": "CGCOM",
   "branding": {
     "name": "CGCOM",
-    "primaryColor": "#46484C",
-    "primaryContrastColor": "#ffffff",
+    "primaryColor": "#ffffff",
+    "primaryContrastColor": "#46484C",
     "secondaryColor": "#F9B000",
     "secondaryContrastColor": "#46484C",
     "logoUrl": "/assets/tenant/logo.png",
@@ -17,7 +17,7 @@
     "knowledgeBaseUrl": null,
     "onboardingUrl": null,
     "supportUrl": null,
-    "walletUrl": "https://cgcom.127.0.0.1.nip.io:4445",
+    "walletUrl": "https://wallet.cgcom.demo.fikua.com",
     "walletUrlTest": null,
     "showWalletUrlTest": false
   },

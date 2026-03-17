@@ -17,7 +17,7 @@
     "knowledgeBaseUrl": "https://in2workspace.github.io/eudistack-platform-docs/",
     "onboardingUrl": null,
     "supportUrl": null,
-    "walletUrl": "https://altia.127.0.0.1.nip.io:4445",
+    "walletUrl": "https://wallet.altia.demo.fikua.com",
     "walletUrlTest": null,
     "showWalletUrlTest": false
   },

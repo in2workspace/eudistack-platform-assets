@@ -17,7 +17,7 @@
     "knowledgeBaseUrl": "https://knowledgebase.dome-marketplace.eu",
     "onboardingUrl": "https://dome-marketplace.eu/register",
     "supportUrl": "https://dome-marketplace.eu/support",
-    "walletUrl": "https://dome.127.0.0.1.nip.io:4445",
+    "walletUrl": "https://wallet.dome.demo.fikua.com",
     "walletUrlTest": null,
     "showWalletUrlTest": false
   },
