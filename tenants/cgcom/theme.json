@@ -9,7 +9,16 @@
     "logoUrl": "/assets/tenant/logo.png",
     "logoDarkUrl": null,
     "faviconUrl": "/assets/tenant/favicon.png",
-    "pwaIconUrl": null
+    "pwaIconUrl": null,
+    "card": {
+      "background": "#F9B000",
+      "gradientEnd": "#E6A200",
+      "text": "#46484C"
+    },
+    "auth": {
+      "background": "#ffffff",
+      "gradientEnd": "#ffffff"
+    }
   },
   "content": {
     "links": [],
