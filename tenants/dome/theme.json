@@ -9,7 +9,16 @@
     "logoUrl": "/assets/tenant/logo.png",
     "logoDarkUrl": null,
     "faviconUrl": "/assets/tenant/favicon.png",
-    "pwaIconUrl": null
+    "pwaIconUrl": null,
+    "card": {
+      "background": "#00ADD3",
+      "gradientEnd": "#0098BA",
+      "text": "#ffffff"
+    },
+    "auth": {
+      "background": "#002060",
+      "gradientEnd": "#001845"
+    }
   },
   "content": {
     "links": [],
@@ -17,7 +26,7 @@
     "knowledgeBaseUrl": "https://knowledgebase.dome-marketplace.eu",
     "onboardingUrl": "https://dome-marketplace.eu/register",
     "supportUrl": "https://dome-marketplace.eu/support",
-    "walletUrl": "https://dome.127.0.0.1.nip.io:4445",
+    "walletUrl": "https://wallet.dome.demo.fikua.com",
     "walletUrlTest": null,
     "showWalletUrlTest": false
   },

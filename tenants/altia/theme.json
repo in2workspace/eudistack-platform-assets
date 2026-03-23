@@ -9,7 +9,16 @@
     "logoUrl": "/assets/tenant/logo.svg",
     "logoDarkUrl": "/assets/tenant/logo-dark.svg",
     "faviconUrl": "/assets/tenant/favicon.ico",
-    "pwaIconUrl": null
+    "pwaIconUrl": null,
+    "card": {
+      "background": "#00ff94",
+      "gradientEnd": "#00e085",
+      "text": "#001E8C"
+    },
+    "auth": {
+      "background": "#001E8C",
+      "gradientEnd": "#001570"
+    }
   },
   "content": {
     "links": [],
@@ -17,7 +26,7 @@
     "knowledgeBaseUrl": "https://in2workspace.github.io/eudistack-platform-docs/",
     "onboardingUrl": null,
     "supportUrl": null,
-    "walletUrl": "https://altia.127.0.0.1.nip.io:4445",
+    "walletUrl": "https://wallet.altia.demo.fikua.com",
     "walletUrlTest": null,
     "showWalletUrlTest": false
   },
