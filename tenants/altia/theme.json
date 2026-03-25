@@ -11,9 +11,9 @@
     "faviconUrl": "/assets/tenant/favicon.ico",
     "pwaIconUrl": null,
     "card": {
-      "background": "#00ff94",
-      "gradientEnd": "#00e085",
-      "text": "#001E8C"
+      "background": "#001E8C",
+      "gradientEnd": "#00ff94",
+      "text": "#fff"
     },
     "auth": {
       "background": "#001E8C",
