@@ -1,0 +1,37 @@
+{
+  "tenantDomain": "KPMG",
+  "branding": {
+    "name": "KPMG",
+    "primaryColor": "#00338D",
+    "primaryContrastColor": "#ffffff",
+    "secondaryColor": "#1E49E2",
+    "secondaryContrastColor": "#ffffff",
+    "logoUrl": "/assets/tenant/logo.svg",
+    "logoDarkUrl": "/assets/tenant/logo-dark.svg",
+    "faviconUrl": "/assets/tenant/favicon.ico",
+    "pwaIconUrl": null,
+    "card": {
+      "background": "#1E49E2",
+      "gradientEnd": "#00338D",
+      "text": "#ffffff"
+    },
+    "auth": {
+      "background": "#1E49E2",
+      "gradientEnd": "#00338D"
+    }
+  },
+  "content": {
+    "links": [],
+    "footer": null,
+    "knowledgeBaseUrl": null,
+    "onboardingUrl": null,
+    "supportUrl": null,
+    "walletUrl": null,
+    "walletUrlTest": null,
+    "showWalletUrlTest": false
+  },
+  "i18n": {
+    "defaultLang": "en",
+    "available": ["en", "es", "ca"]
+  }
+}
