@@ -1,0 +1,71 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: true
+        type: choice
+        options:
+          - stg
+        default: 'stg'
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy tenant assets to ${{ inputs.environment || 'stg' }}
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment || 'stg' }}
+    env:
+      ENVIRONMENT: ${{ inputs.environment || 'stg' }}
+      S3_BUCKET: eudistack-${{ inputs.environment || 'stg' }}-s3-ew1-spa
+      CF_COMMENT_PREFIX: eudistack-${{ inputs.environment || 'stg' }}-cdn-ew1-
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Sync tenant assets to S3
+        run: |
+          set -euo pipefail
+
+          aws s3 sync tenants/ "s3://${S3_BUCKET}/assets/tenants/" \
+            --delete \
+            --exclude "*.md" \
+            --exclude ".DS_Store" \
+            --cache-control "public, max-age=300"
+
+          echo "### Tenant assets synced" >> $GITHUB_STEP_SUMMARY
+          echo "- **Bucket:** s3://${S3_BUCKET}/assets/tenants/" >> $GITHUB_STEP_SUMMARY
+
+      - name: Invalidate all tenant CloudFront distributions
+        run: |
+          set -euo pipefail
+
+          DIST_IDS=$(aws cloudfront list-distributions \
+            --query "DistributionList.Items[?starts_with(Comment, '${CF_COMMENT_PREFIX}')].Id" \
+            --output text)
+
+          if [ -z "${DIST_IDS}" ]; then
+            echo "::warning::No CloudFront distributions found for prefix '${CF_COMMENT_PREFIX}'"
+            exit 0
+          fi
+
+          echo "### CloudFront invalidations" >> $GITHUB_STEP_SUMMARY
+          for DIST_ID in ${DIST_IDS}; do
+            aws cloudfront create-invalidation \
+              --distribution-id "${DIST_ID}" \
+              --paths "/assets/tenants/*" >/dev/null
+            echo "- Invalidated ${DIST_ID}" >> $GITHUB_STEP_SUMMARY
+          done
