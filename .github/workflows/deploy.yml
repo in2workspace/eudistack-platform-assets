@@ -3,7 +3,13 @@ name: deploy
 on:
   push:
     branches: [main]
-  workflow_dispatch:
+    paths-ignore:
+      - '**.md'
+      - '.github/**'
+      - 'docs/**'
+      - 'LICENSE'
+      - '.gitignore'
+  workflow_dispatch: # manually trigger
     inputs:
       environment:
         description: 'Target environment'
