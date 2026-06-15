@@ -6,7 +6,7 @@
     "primaryContrastColor": "#ffffff",
     "secondaryColor": "#00ADD3",
     "secondaryContrastColor": "#ffffff",
-    "logoUrl": "/assets/tenant/logo.png",
+    "logoUrl": "/assets/tenant/dome-logo.svg",
     "logoDarkUrl": "/assets/tenant/logo-dark.svg",
     "faviconUrl": "/assets/tenant/favicon.png",
     "pwaIconUrl": null,
@@ -23,6 +23,8 @@
   "content": {
     "links": [],
     "footer": null,
+    "headerEmbedCode": "<header style=\"background:rgba(11,21,41,0.75);width:100%;box-sizing:border-box;padding:0 32px;display:flex;align-items:center;height:88px;\"><a href=\"https://dome-marketplace.eu\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"flex-shrink:0;display:flex;align-items:center;text-decoration:none;\"><img src=\"{logoUrl}\" alt=\"DOME Marketplace\" style=\"height:40px;width:auto;display:block;\" /></a><nav aria-label=\"DOME Marketplace navigation\" style=\"flex:1;display:flex;justify-content:center;align-items:center;gap:32px;\"><a href=\"https://dome-marketplace.eu/landing-page/customers\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#ffffff;text-decoration:none;font-size:14px;\">For Customers</a><a href=\"https://dome-marketplace.eu/landing-page/providers\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#ffffff;text-decoration:none;font-size:14px;\">For Providers</a><a href=\"https://dome-marketplace.eu/dashboard\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#ffffff;text-decoration:none;font-size:14px;\">Marketplace</a><a href=\"https://knowledgebase.dome-marketplace-prd.org/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#ffffff;text-decoration:none;font-size:14px;\">Resources</a><a href=\"https://dome-marketplace.eu/blog\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#ffffff;text-decoration:none;font-size:14px;\">Blog</a></nav><a href=\"https://dome-marketplace.eu/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"flex-shrink:0;color:#ffffff;text-decoration:none;font-size:14px;border:2px solid #2D58A7;padding:8px 20px;border-radius:5px;\">Contact Us</a></header>",
+    "footerEmbedCode": null,
     "knowledgeBaseUrl": "https://knowledgebase.dome-marketplace.eu",
     "onboardingUrl": "https://dome-marketplace.eu/register",
     "supportUrl": "https://dome-marketplace.eu/support",
@@ -32,6 +34,9 @@
   },
   "i18n": {
     "defaultLang": "en",
-    "available": ["en", "es"]
+    "available": [
+      "en",
+      "es"
+    ]
   }
 }
