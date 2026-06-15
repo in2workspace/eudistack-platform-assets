@@ -1,0 +1,18 @@
+{
+    "custom.127.0.0.1.nip.io": "dome",
+    "issuer.dome-marketplace-lcl.org": "dome",
+    "wallet.dome-marketplace-lcl.org": "dome",
+    "verifier.dome-marketplace-lcl.org": "dome",
+    "issuer.dome-marketplace-sbx.org": "dome",
+    "wallet.dome-marketplace-sbx.org": "dome",
+    "verifier.dome-marketplace-sbx.org": "dome",
+    "issuer.dome-marketplace-dev.org": "dome",
+    "wallet.dome-marketplace-dev.org": "dome",
+    "verifier.dome-marketplace-dev.org": "dome",
+    "issuer.dome-marketplace-dev2.org": "dome",
+    "wallet.dome-marketplace-dev2.org": "dome",
+    "verifier.dome-marketplace-dev2.org": "dome",
+    "issuer.dome-marketplace.eu": "dome",
+    "wallet.dome-marketplace.eu": "dome",
+    "verifier.dome-marketplace.eu": "dome"
+}
