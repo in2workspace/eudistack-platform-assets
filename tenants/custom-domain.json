@@ -1,18 +1,95 @@
 {
-    "custom.127.0.0.1.nip.io": "dome",
-    "issuer.dome-marketplace-lcl.org": "dome",
-    "wallet.dome-marketplace-lcl.org": "dome",
-    "verifier.dome-marketplace-lcl.org": "dome",
-    "issuer.dome-marketplace-sbx.org": "dome",
-    "wallet.dome-marketplace-sbx.org": "dome",
-    "verifier.dome-marketplace-sbx.org": "dome",
-    "issuer.dome-marketplace-dev.org": "dome",
-    "wallet.dome-marketplace-dev.org": "dome",
-    "verifier.dome-marketplace-dev.org": "dome",
-    "issuer.dome-marketplace-dev2.org": "dome",
-    "wallet.dome-marketplace-dev2.org": "dome",
-    "verifier.dome-marketplace-dev2.org": "dome",
-    "issuer.dome-marketplace.eu": "dome",
-    "wallet.dome-marketplace.eu": "dome",
-    "verifier.dome-marketplace.eu": "dome"
+  "domains": {
+    "custom.127.0.0.1.nip.io": {
+      "tenantId": "dome",
+      "envId": "local"
+    },
+    "issuer-dome.127.0.0.1.nip.io": {
+      "tenantId": "dome",
+      "envId": "local"
+    },
+    "verifier-dome.127.0.0.1.nip.io": {
+      "tenantId": "dome",
+      "envId": "local"
+    },
+    "wallet-dome.127.0.0.1.nip.io": {
+      "tenantId": "dome",
+      "envId": "local"
+    },
+    "issuer.dome-marketplace-lcl.org": {
+      "tenantId": "dome",
+      "envId": "stg-lcl"
+    },
+    "wallet.dome-marketplace-lcl.org": {
+      "tenantId": "dome",
+      "envId": "stg-lcl"
+    },
+    "verifier.dome-marketplace-lcl.org": {
+      "tenantId": "dome",
+      "envId": "stg-lcl"
+    },
+    "issuer.dome-marketplace-sbx.org": {
+      "tenantId": "dome",
+      "envId": "stg-sbx"
+    },
+    "wallet.dome-marketplace-sbx.org": {
+      "tenantId": "dome",
+      "envId": "stg-sbx"
+    },
+    "verifier.dome-marketplace-sbx.org": {
+      "tenantId": "dome",
+      "envId": "stg-sbx"
+    },
+    "issuer.dome-marketplace-dev2.org": {
+      "tenantId": "dome",
+      "envId": "dev"
+    },
+    "wallet.dome-marketplace-dev2.org": {
+      "tenantId": "dome",
+      "envId": "dev"
+    },
+    "verifier.dome-marketplace-dev2.org": {
+      "tenantId": "dome",
+      "envId": "dev"
+    },
+    "issuer.dome-marketplace.eu": {
+      "tenantId": "dome",
+      "envId": "pro"
+    },
+    "wallet.dome-marketplace.eu": {
+      "tenantId": "dome",
+      "envId": "pro"
+    },
+    "verifier.dome-marketplace.eu": {
+      "tenantId": "dome",
+      "envId": "pro"
+    }
+  },
+  "env": {
+    "local": {
+      "issuer": "https://issuer-dome.127.0.0.1.nip.io:4443/issuer",
+      "verifier": "https://verifier-dome.127.0.0.1.nip.io:4443/verifier",
+      "wallet": "https://wallet-dome.127.0.0.1.nip.io:4443/wallet"
+    },
+    "stg-lcl": {
+      "issuer": "https://issuer.dome-marketplace-lcl.org",
+      "verifier": "https://verifier.dome-marketplace-lcl.org",
+      "wallet": "https://wallet.dome-marketplace-lcl.org"
+    },
+    "stg-sbx": {
+      "issuer": "https://issuer.dome-marketplace-sbx.org",
+      "verifier": "https://verifier.dome-marketplace-sbx.org",
+      "wallet": "https://wallet.dome-marketplace-sbx.org"
+    },
+    "dev": {
+      "issuer": "https://issuer.dome-marketplace-dev2.org",
+      "verifier": "https://verifier.dome-marketplace-dev2.org",
+      "wallet": "https://wallet.dome-marketplace-dev2.org"
+    },
+    "pro": {
+      "issuer": "https://issuer.dome-marketplace.eu",
+      "verifier": "https://verifier.dome-marketplace.eu",
+      "wallet": "https://wallet.dome-marketplace.eu"
+    }
+  }
 }
