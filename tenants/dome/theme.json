@@ -4,8 +4,8 @@
     "name": "DOME Marketplace",
     "primaryColor": "#002060",
     "primaryContrastColor": "#ffffff",
-    "secondaryColor": "#00ADD3",
-    "secondaryContrastColor": "#2d58a7",
+    "secondaryColor": "#3E60A0",
+    "secondaryContrastColor": "#ffffff",
     "logoUrl": "/assets/tenant/dome-logo.svg",
     "logoDarkUrl": "/assets/tenant/logo-dark.svg",
     "faviconUrl": "/assets/tenant/favicon.png",
@@ -16,8 +16,8 @@
       "text": "#ffffff"
     },
     "auth": {
-      "background": "#002060",
-      "gradientEnd": "#001845"
+      "background": "#3463B8",
+      "gradientEnd": "#18305B"
     }
   },
   "content": {
