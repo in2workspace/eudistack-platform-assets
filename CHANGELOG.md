@@ -17,7 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- **DOME colors** — updated secondary, secondary-contrast and auth background/gradient colors.
+- **DOME colors** — updated secondary and auth background/gradient colors.
 
 ## [1.0.0] - 2026-03-24
 
@@ -33,5 +33,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **Legacy tenant directories** — Top-level `Altia/`, `DOME/`, `ISBE/`, `OMC/`,
   `RFEF/` preserved for backward compatibility during migration
 
-[Unreleased]: https://github.com/in2workspace/eudistack-platform-assets/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/in2workspace/eudistack-platform-assets/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/in2workspace/eudistack-platform-assets/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/in2workspace/eudistack-platform-assets/releases/tag/v1.0.0
