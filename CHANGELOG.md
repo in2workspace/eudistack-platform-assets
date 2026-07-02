@@ -8,6 +8,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-07-02
+
+### Added
+
+- **DOME embedded footer** — `footerEmbedCode` added to `tenants/dome/theme.json`.
+- **Tenant URLs** — `supportUrl` added across all tenants; wallet / custom-domain URLs updated.
+
+### Changed
+
+- **DOME colors** — updated secondary and auth background/gradient colors.
+
 ## [1.0.0] - 2026-03-24
 
 ### Added
@@ -22,5 +33,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **Legacy tenant directories** — Top-level `Altia/`, `DOME/`, `ISBE/`, `OMC/`,
   `RFEF/` preserved for backward compatibility during migration
 
-[Unreleased]: https://github.com/in2workspace/eudistack-platform-assets/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/in2workspace/eudistack-platform-assets/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/in2workspace/eudistack-platform-assets/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/in2workspace/eudistack-platform-assets/releases/tag/v1.0.0
