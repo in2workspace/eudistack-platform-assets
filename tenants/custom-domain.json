@@ -18,27 +18,27 @@
     },
     "issuer.dome-marketplace-lcl.org": {
       "tenantId": "dome",
-      "envId": "stg-lcl"
+      "envId": "lcl"
     },
     "wallet.dome-marketplace-lcl.org": {
       "tenantId": "dome",
-      "envId": "stg-lcl"
+      "envId": "lcl"
     },
     "verifier.dome-marketplace-lcl.org": {
       "tenantId": "dome",
-      "envId": "stg-lcl"
+      "envId": "lcl"
     },
     "issuer.dome-marketplace-sbx.org": {
       "tenantId": "dome",
-      "envId": "stg-sbx"
+      "envId": "sbx"
     },
     "wallet.dome-marketplace-sbx.org": {
       "tenantId": "dome",
-      "envId": "stg-sbx"
+      "envId": "sbx"
     },
     "verifier.dome-marketplace-sbx.org": {
       "tenantId": "dome",
-      "envId": "stg-sbx"
+      "envId": "sbx"
     },
     "issuer.dome-marketplace-dev2.org": {
       "tenantId": "dome",
@@ -70,28 +70,28 @@
       "defaultEnv": "pro",
       "env": {
         "local": {
-          "issuer": "https://issuer-dome.127.0.0.1.nip.io:4443",
-          "verifier": "https://verifier-dome.127.0.0.1.nip.io:4443",
+          "issuer": "https://issuer-dome.127.0.0.1.nip.io:4443/issuer",
+          "verifier": "https://verifier-dome.127.0.0.1.nip.io:4443/verifier",
           "wallet": "https://wallet-dome.127.0.0.1.nip.io:4443"
         },
-        "stg-lcl": {
-          "issuer": "https://issuer.dome-marketplace-lcl.org",
-          "verifier": "https://verifier.dome-marketplace-lcl.org",
+        "lcl": {
+          "issuer": "https://issuer.dome-marketplace-lcl.org/issuer",
+          "verifier": "https://verifier.dome-marketplace-lcl.org/verifier",
           "wallet": "https://wallet.dome-marketplace-lcl.org"
         },
-        "stg-sbx": {
-          "issuer": "https://issuer.dome-marketplace-sbx.org",
-          "verifier": "https://verifier.dome-marketplace-sbx.org",
+        "sbx": {
+          "issuer": "https://issuer.dome-marketplace-sbx.org/issuer",
+          "verifier": "https://verifier.dome-marketplace-sbx.org/verifier",
           "wallet": "https://wallet.dome-marketplace-sbx.org"
         },
         "dev": {
-          "issuer": "https://issuer.dome-marketplace-dev2.org",
-          "verifier": "https://verifier.dome-marketplace-dev2.org",
+          "issuer": "https://issuer.dome-marketplace-dev2.org/issuer",
+          "verifier": "https://verifier.dome-marketplace-dev2.org/verifier",
           "wallet": "https://wallet.dome-marketplace-dev2.org"
         },
         "pro": {
-          "issuer": "https://issuer.dome-marketplace.eu",
-          "verifier": "https://verifier.dome-marketplace.eu",
+          "issuer": "https://issuer.dome-marketplace.eu/issuer",
+          "verifier": "https://verifier.dome-marketplace.eu/verifier",
           "wallet": "https://wallet.dome-marketplace.eu"
         }
       }
