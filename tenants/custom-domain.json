@@ -67,7 +67,6 @@
   },
   "tenants": {
     "dome": {
-      "defaultEnv": "pro",
       "env": {
         "local": {
           "issuer": "https://issuer-dome.127.0.0.1.nip.io:4443/issuer",
