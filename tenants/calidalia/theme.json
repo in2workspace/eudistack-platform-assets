@@ -1,0 +1,36 @@
+{
+  "tenantDomain": "CALIDALIA",
+  "branding": {
+    "name": "Calidalia",
+    "primaryColor": "#003057",
+    "primaryContrastColor": "#ffffff",
+    "secondaryColor": "#ffd100",
+    "secondaryContrastColor": "#003057",
+    "logoUrl": "/assets/tenant/logo.svg",
+    "logoDarkUrl": "/assets/tenant/logo-dark.svg",
+    "faviconUrl": "/assets/tenant/favicon.svg",
+    "pwaIconUrl": null,
+    "card": {
+      "background": "#003057",
+      "gradientEnd": "#00223d",
+      "text": "#ffffff"
+    },
+    "auth": {
+      "background": "#003057",
+      "gradientEnd": "#00223d"
+    }
+  },
+  "content": {
+    "links": [],
+    "footer": null,
+    "knowledgeBaseUrl": "https://docs.eudistack.net",
+    "supportUrl": "https://docs.eudistack.net/",
+    "walletUrl": null,
+    "walletUrlTest": null,
+    "showWalletUrlTest": false
+  },
+  "i18n": {
+    "defaultLang": "es",
+    "available": ["en", "es"]
+  }
+}
