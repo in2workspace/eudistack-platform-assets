@@ -6,8 +6,8 @@
     "primaryContrastColor": "#ffffff",
     "secondaryColor": "#ffd100",
     "secondaryContrastColor": "#003057",
-    "logoUrl": "/assets/tenant/logo.svg",
-    "logoDarkUrl": "/assets/tenant/logo-dark.svg",
+    "logoUrl": "/assets/tenant/logo.png",
+    "logoDarkUrl": "/assets/tenant/logo-dark.png",
     "faviconUrl": "/assets/tenant/favicon.svg",
     "pwaIconUrl": null,
     "card": {
