@@ -1,0 +1,34 @@
+{
+  "default": {
+    "allowedCredentials": [
+      "learcredential.employee.w3c",
+      "learcredential.employee.sd"
+    ]
+  },
+  "tenants": {
+    "platform": {
+      "allowedCredentials": [
+        "learcredential.employee.w3c",
+        "learcredential.employee.sd",
+        "learcredential.machine.w3c",
+        "learcredential.machine.sd"
+      ]
+    },
+    "sandbox": {
+      "allowedCredentials": [
+        "learcredential.employee.w3c",
+        "learcredential.employee.sd",
+        "learcredential.machine.w3c",
+        "learcredential.machine.sd"
+      ]
+    },
+    "dome": {
+      "allowedCredentials": [
+        "learcredential.employee.w3c",
+        "learcredential.employee.sd",
+        "learcredential.machine.w3c",
+        "learcredential.machine.sd"
+      ]
+    }
+  }
+}
