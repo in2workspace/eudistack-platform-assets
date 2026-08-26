@@ -1,0 +1,13 @@
+{
+  "groups": [
+    {
+      "id": "dome-stg",
+      "brokerUrl": "https://dome.stg.eudistack.net/wallet/assets/instance-broker.html",
+      "memberOrigins": [
+        "https://dome.stg.eudistack.net",
+        "https://wallet.dome-marketplace-lcl.org",
+        "https://wallet.dome-marketplace-sbx.org"
+      ]
+    }
+  ]
+}
