@@ -10,6 +10,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- **Cross-origin instance groups** — `tenants/instance-groups.json`, declaring which
+  front-door domains are aliases of the same wallet backend for a given tenant (canonical
+  domain plus vanity domains sharing the same origin infrastructure). Consumed by
+  `eudistack-core-wallet-pwa`'s single-instance guard so duplicate-tab detection spans all
+  of a tenant's domains instead of just the one a given tab happens to be on. Initial
+  contents cover DOME STG only (`dome.stg.eudistack.net` plus the `lcl`/`sbx` vanity
+  domains) — local/dev-network origins are deliberately never listed.
+
 - **Issuance UI policy** — `tenants/issuance-ui.json`, a single document declaring which
   credentials the Issuer UI (`eudistack-mfe-credential-manager`) offers a form for, per
   tenant. It narrows what the issuer already allows: everything a tenant's
