@@ -1,15 +1,7 @@
-name: ci-cd
+name: deploy-dev
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches: [main]
-  #   paths-ignore:
-  #     - '**.md'
-  #     - '.github/**'
-  #     - 'docs/**'
-  #     - 'LICENSE'
-  #     - '.gitignore'
 
 permissions:
   contents: read
@@ -25,16 +17,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-  cd-stg:
-    name: Deploy to Staging
+  cd-dev:
+    name: Deploy to Dev
     needs: ci
     runs-on: ubuntu-latest
     environment:
-      name: stg
+      name: dev
     env:
-      ENVIRONMENT: stg
-      S3_BUCKET: eudistack-stg-s3-ew1-spa
-      CF_COMMENT_PREFIX: eudistack-stg-cdn-ew1-
+      ENVIRONMENT: dev
+      S3_BUCKET: eudistack-dev-s3-ew1-spa
+      CF_COMMENT_PREFIX: eudistack-dev-cdn-ew1-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -42,8 +34,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_STG }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_STG }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Sync tenant assets to S3
@@ -82,7 +74,7 @@ jobs:
 
   cd-pro:
     name: Deploy to Production
-    needs: [ci, cd-stg]
+    needs: [ci, cd-dev]
     runs-on: ubuntu-latest
     environment:
       name: pro
