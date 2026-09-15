@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^ruby -e 'require \"yaml\"; data = YAML\\.load_file\\(\"\\.github/workflows/cd-dev\\.yml\"\\); puts \"workflow: #\\{data\\[\"name\"\\]\\}\"; puts \"jobs: #\\{data\\[\"jobs\"\\]\\.keys\\.join\\(\", \"\\)\\}\"'$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
