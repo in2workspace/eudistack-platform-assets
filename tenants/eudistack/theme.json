@@ -31,6 +31,6 @@
   },
   "i18n": {
     "defaultLang": "es",
-    "available": ["en", "es"]
+    "available": ["en", "es", "ca"]
   }
 }
