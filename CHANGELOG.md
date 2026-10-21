@@ -10,6 +10,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- **EUDIStack email images** — `tenants/eudistack/email/logo.png` and `header-bg.png`
+  (transparent, 640x190), the images the issuer and EBW emails load for a tenant whose
+  `email-branding.yaml` block sets `logo` / `header-background`. `sandbox` and `platform`
+  point to `eudistack`, so this is also what they show; without such a block nothing changes.
+  **Temporary (test only):** `logo.png` is currently a copy of `tenants/dome/email/logo.png`, to
+  check the DOME email branding in dev, where only `sandbox` is provisioned. Restore the
+  EUDIStack logo once the test is done.
 - **Issuance UI policy** — `tenants/issuance-ui.json`, a single document declaring which
   credentials the Issuer UI (`eudistack-mfe-credential-manager`) offers a form for, per
   tenant. It narrows what the issuer already allows: everything a tenant's
