@@ -8,6 +8,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **CGCOM favicon (EUD-341)** — `tenants/cgcom/favicon.png` is now the whole CGCOM logo scaled
+  to 180 px high and centred on a white 180x180 square, about 30 KB. The previous file was the
+  same logo at 2019x2219 px and 420 KB, far too heavy for a favicon. A single file serves
+  as favicon and Apple touch icon, since the theme has one `faviconUrl`; `theme.json` already
+  points to `favicon.png` and does not change. It shows in every interface that reads the theme
+  (Wallet, Login, issuance portal, administration portal).
+
 ### Added
 
 - **EUDIStack email images** — `tenants/eudistack/email/logo.png` and `header-bg.png`
